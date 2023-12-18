@@ -343,7 +343,8 @@ console.log("queryElement", queryElement)
   const onSuccessPaypal = (details, data) => {
     console.log("detailsagag",details)
     handleUpdateTime()
-
+    if(user?.access_token && order?.orderItemsSlected && order?.shippingAddress.fullName
+      && order?.shippingAddress.address && order?.shippingAddress.phone && order?.shippingAddress.city && priceMemo && user?.id && shippingStatus) {
     mutationAddOrder.mutate(
       { 
         
@@ -368,6 +369,7 @@ console.log("queryElement", queryElement)
         paidAt: dayjs(details.update_time).format("YYYY-MM-DD"), 
       }
     )
+      }
   }
 
 
