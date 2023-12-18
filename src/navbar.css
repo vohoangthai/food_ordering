@@ -1,0 +1,21 @@
+.navbar-ads-title {
+  font-family: "DM Serif Display", serif;
+  text-shadow: 5px 5px 5px #f87777;
+  text-transform: uppercase;
+}/*# sourceMappingURL=navbar.css.map */
+.menu{
+  padding-top: 10px;
+}
+.menu::before{
+  display: none;
+  position: absolute;
+  content: "";
+  width: 150%;
+  height: 30px;
+  left: -20px;
+  bottom: -30px;
+  background-color: transparent;
+}
+.menu:hover::before{
+  display: block;
+}

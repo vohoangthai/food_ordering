@@ -1,0 +1,16 @@
+.hours-discount {
+  background-image: url("https://i.pinimg.com/736x/df/dd/b6/dfddb69a5bd8c705e4925fee461b9e40.jpg");
+}
+
+.sale-label {
+  transform: rotate(-44deg);
+  top: 16px;
+  left: -35px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+}
+
+.open-event {
+  background: radial-gradient(circle, rgb(243, 251, 255) 0%, rgba(78, 210, 230, 0.9934348739) 35%, rgb(25, 166, 236) 100%);
+}/*# sourceMappingURL=sale-event.css.map */

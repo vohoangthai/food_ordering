@@ -1,0 +1,29 @@
+#22{
+    
+    top:0;
+    position: absolute;
+    line-height: 1.6rem;
+}
+
+.showhidden{
+    display: none;
+    }
+    #productheader{
+        line-height: 3rem;
+    }
+    #productheader1{
+border-top: 50px solid rgb(251 146 60);
+  border-left: 50px solid transparent;
+
+    }
+    #productheader2{
+
+        border-top: 50px solid rgb(251 146 60);
+        border-right: 50px solid transparent;
+
+    }
+#productheaderall{
+    display: flex;
+    justify-content: center;
+
+}
