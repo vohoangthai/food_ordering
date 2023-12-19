@@ -206,7 +206,6 @@ console.log("queryElement", queryElement)
 
   const handleAddOrder = () => {
     handleUpdateTime()
-    
     if(user?.access_token && order?.orderItemsSlected && order?.shippingAddress.fullName
       && order?.shippingAddress.address && order?.shippingAddress.phone && order?.shippingAddress.city && priceMemo && user?.id && shippingStatus) {
         // eslint-disable-next-line no-unused-expressions
@@ -232,6 +231,9 @@ console.log("queryElement", queryElement)
             email: user?.email
           }
         )
+      }
+      if(isError){
+        message.error("Thiếu thông tin đơn hàng!")
       }
   }
  
@@ -369,6 +371,10 @@ console.log("queryElement", queryElement)
         paidAt: dayjs(details.update_time).format("YYYY-MM-DD"), 
       }
     )
+
+      }
+      if(isError){
+        message.error("Thiếu thông tin đơn hàng!")
       }
   }
 
